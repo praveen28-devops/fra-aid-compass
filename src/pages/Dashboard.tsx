@@ -69,9 +69,9 @@ const Dashboard = () => {
       {/* Header */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <div>
-          <h1 className="text-3xl font-bold text-primary">FRA Management Dashboard</h1>
+          <h1 className="text-3xl font-bold text-primary">Aranya Setu Dashboard</h1>
           <p className="text-muted-foreground">
-            Comprehensive overview of Forest Rights Act claim processing across all states
+            Comprehensive overview of Forest Rights management across all states
           </p>
         </div>
         

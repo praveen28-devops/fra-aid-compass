@@ -41,8 +41,8 @@ const Header = () => {
               <Leaf className="w-6 h-6 text-white" />
             </div>
             <div>
-              <div className="text-lg font-bold text-primary">FRA Atlas</div>
-              <div className="text-xs text-muted-foreground">WebGIS DSS</div>
+              <div className="text-lg font-bold text-primary">Aranya Setu</div>
+              <div className="text-xs text-muted-foreground">Forest Bridge</div>
             </div>
           </Link>
 

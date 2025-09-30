@@ -68,9 +68,9 @@ const Index = () => {
             </Badge>
             
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              FRA Atlas &
+              Aranya Setu
               <span className="block bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-                WebGIS DSS
+                Forest Bridge
               </span>
             </h1>
             
@@ -124,7 +124,7 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Comprehensive FRA Management
+              Comprehensive Forest Rights Management
             </h2>
             <p className="text-xl text-muted-foreground">
               Streamlining forest rights administration with cutting-edge technology 

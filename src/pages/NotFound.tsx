@@ -23,7 +23,7 @@ const NotFound = () => {
         </CardHeader>
         <CardContent className="space-y-4">
           <p className="text-muted-foreground">
-            The page you're looking for doesn't exist in the FRA Atlas system.
+            The page you're looking for doesn't exist in the Aranya Setu system.
           </p>
           
           <div className="space-y-2">

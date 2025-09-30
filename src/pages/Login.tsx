@@ -19,8 +19,8 @@ const Login = () => {
               <Leaf className="w-8 h-8 text-white" />
             </div>
             <div className="text-white">
-              <div className="text-2xl font-bold">FRA Atlas</div>
-              <div className="text-sm opacity-90">WebGIS DSS</div>
+              <div className="text-2xl font-bold">Aranya Setu</div>
+              <div className="text-sm opacity-90">Forest Bridge</div>
             </div>
           </Link>
         </div>
@@ -30,7 +30,7 @@ const Login = () => {
           <CardHeader className="text-center">
             <CardTitle className="text-2xl text-primary">Secure Login</CardTitle>
             <CardDescription>
-              Access the Forest Rights Act Management System
+              Access the Aranya Setu Forest Rights Management System
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">

@@ -13,8 +13,8 @@ const Footer = () => {
                 <Leaf className="w-6 h-6 text-white" />
               </div>
               <div>
-                <div className="text-lg font-bold text-primary">FRA Atlas</div>
-                <div className="text-sm text-muted-foreground">WebGIS DSS</div>
+                <div className="text-lg font-bold text-primary">Aranya Setu</div>
+                <div className="text-sm text-muted-foreground">Forest Bridge</div>
               </div>
             </div>
             <p className="text-sm text-muted-foreground">
@@ -84,7 +84,7 @@ const Footer = () => {
 
         <div className="border-t mt-8 pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © 2024 Government of India. Forest Rights Act Atlas & WebGIS Decision Support System. 
+            © 2024 Government of India. Aranya Setu - Forest Rights Management System. 
             All rights reserved.
           </p>
         </div>
