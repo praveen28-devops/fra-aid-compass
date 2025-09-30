@@ -32,17 +32,17 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-xl supports-[backdrop-filter]:bg-background/80 shadow-sm">
       <div className="container mx-auto px-4">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-18 items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
-            <div className="flex items-center justify-center w-10 h-10 bg-gradient-forest rounded-lg">
-              <Leaf className="w-6 h-6 text-white" />
+          <Link to="/" className="flex items-center space-x-3 group">
+            <div className="flex items-center justify-center w-12 h-12 bg-gradient-forest rounded-xl shadow-md group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
+              <Leaf className="w-7 h-7 text-white" />
             </div>
             <div>
-              <div className="text-lg font-bold text-primary">Aranya Setu</div>
-              <div className="text-xs text-muted-foreground">Forest Bridge</div>
+              <div className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-forest-secondary">Aranya Setu</div>
+              <div className="text-xs text-muted-foreground font-medium">Forest Bridge</div>
             </div>
           </Link>
 
