@@ -57,6 +57,29 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // FRA System Colors
+        forest: {
+          primary: "hsl(var(--forest-primary))",
+          secondary: "hsl(var(--forest-secondary))",
+        },
+        earth: {
+          brown: "hsl(var(--earth-brown))",
+        },
+        government: {
+          blue: "hsl(var(--government-blue))",
+        },
+        warning: {
+          amber: "hsl(var(--warning-amber))",
+        },
+      },
+      backgroundImage: {
+        'gradient-forest': 'var(--gradient-forest)',
+        'gradient-earth': 'var(--gradient-earth)',
+        'gradient-hero': 'var(--gradient-hero)',
+      },
+      boxShadow: {
+        'forest': 'var(--shadow-forest)',
+        'card-custom': 'var(--shadow-card)',
       },
       borderRadius: {
         lg: "var(--radius)",
