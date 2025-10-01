@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Map from "./pages/Map";
 import Dashboard from "./pages/Dashboard";
+import DSS from "./pages/DSS";
+import Reports from "./pages/Reports";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/layout/Layout";
@@ -24,6 +26,8 @@ const App = () => (
             <Route index element={<Index />} />
             <Route path="map" element={<Map />} />
             <Route path="dashboard" element={<Dashboard />} />
+            <Route path="dss" element={<DSS />} />
+            <Route path="reports" element={<Reports />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           </Route>
           <Route path="*" element={<NotFound />} />
