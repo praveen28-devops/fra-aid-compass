@@ -8,9 +8,12 @@ import Map from "./pages/Map";
 import Dashboard from "./pages/Dashboard";
 import DSS from "./pages/DSS";
 import Reports from "./pages/Reports";
+import Admin from "./pages/Admin";
+import AdminLogin from "./pages/AdminLogin";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/layout/Layout";
+import ProtectedAdminRoute from "./components/ProtectedAdminRoute";
 
 const queryClient = new QueryClient();
 
@@ -22,12 +25,18 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/login" element={<Login />} />
+          <Route path="/admin/login" element={<AdminLogin />} />
           <Route path="/" element={<Layout />}>
             <Route index element={<Index />} />
             <Route path="map" element={<Map />} />
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="dss" element={<DSS />} />
             <Route path="reports" element={<Reports />} />
+            <Route path="admin" element={
+              <ProtectedAdminRoute>
+                <Admin />
+              </ProtectedAdminRoute>
+            } />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           </Route>
           <Route path="*" element={<NotFound />} />
