@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import MapComponent from "@/components/MapComponent";
 import { 
   Layers, 
   MapPin, 
@@ -16,7 +17,7 @@ import {
   Minus
 } from "lucide-react";
 
-const Map = () => {
+const MapPage = () => {
   const [activeLayer, setActiveLayer] = useState("forest-cover");
   
   const layers = [
@@ -117,23 +118,20 @@ const Map = () => {
 
       {/* Map Area */}
       <div className="flex-1 relative">
-        {/* Map Placeholder */}
-        <div className="w-full h-full bg-gradient-to-br from-green-50 to-blue-50 flex items-center justify-center">
-          <Card className="max-w-md text-center shadow-forest">
-            <CardHeader>
-              <CardTitle className="flex items-center justify-center gap-2">
-                <MapPin className="w-6 h-6 text-primary" />
-                Interactive Map Loading
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground mb-4">
-                The interactive WebGIS map will be integrated here with Leaflet/Mapbox GL JS 
-                for real-time forest data visualization.
-              </p>
-              <Badge variant="outline">Current Layer: {layers.find(l => l.id === activeLayer)?.name}</Badge>
-            </CardContent>
-          </Card>
+        {/* Interactive Leaflet Map */}
+        <div className="w-full h-full">
+          <MapComponent 
+            width="100%" 
+            height="100%" 
+            className="rounded-none border-0"
+          />
+        </div>
+        
+        {/* Current Layer Badge Overlay */}
+        <div className="absolute top-4 left-4 z-[1000]">
+          <Badge variant="outline" className="bg-background/95 backdrop-blur">
+            Current Layer: {layers.find(l => l.id === activeLayer)?.name}
+          </Badge>
         </div>
 
         {/* Top Controls */}
@@ -178,4 +176,4 @@ const Map = () => {
   );
 };
 
-export default Map;
+export default MapPage;

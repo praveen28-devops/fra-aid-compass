@@ -1,0 +1,173 @@
+/* LayerSidebar.module.css */
+/* Alternative CSS styling for LayerSidebar component */
+/* Use this if you prefer CSS modules over inline styles */
+
+.sidebar {
+  width: 300px;
+  height: 100%;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.header {
+  font-size: 18px;
+  font-weight: bold;
+  color: #374151;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #f3f4f6;
+}
+
+.layerList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.layerItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: transparent;
+  border: 2px solid transparent;
+  text-align: left;
+  width: 100%;
+  font-family: inherit;
+}
+
+.layerItem:hover:not(.selected) {
+  background-color: #f9fafb;
+}
+
+.layerItem.selected {
+  background-color: #f0f9ff;
+  border-color: #3b82f6;
+}
+
+.layerItem:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.colorIndicator {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.icon {
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.textContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.layerName {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin: 0;
+}
+
+.layerDescription {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 2px 0 0 0;
+}
+
+.footer {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  .layerItem {
+    padding: 10px;
+    gap: 10px;
+  }
+  
+  .header {
+    font-size: 16px;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .sidebar {
+    border: 2px solid #000000;
+  }
+  
+  .layerItem {
+    border-width: 1px;
+  }
+  
+  .layerItem.selected {
+    border-color: #000000;
+    background-color: #ffff00;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .layerItem {
+    transition: none;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .sidebar {
+    background-color: #1f2937;
+    border-color: #374151;
+    color: #f9fafb;
+  }
+  
+  .header {
+    color: #f9fafb;
+    border-bottom-color: #374151;
+  }
+  
+  .layerItem:hover:not(.selected) {
+    background-color: #374151;
+  }
+  
+  .layerItem.selected {
+    background-color: #1e40af;
+    border-color: #3b82f6;
+  }
+  
+  .layerName {
+    color: #f9fafb;
+  }
+  
+  .layerDescription {
+    color: #9ca3af;
+  }
+  
+  .footer {
+    border-top-color: #374151;
+    color: #9ca3af;
+  }
+}
